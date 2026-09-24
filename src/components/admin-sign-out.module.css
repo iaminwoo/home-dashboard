@@ -1,0 +1,1 @@
+.button { display: block; margin: 2.5rem auto 0; padding: .5rem .75rem; border: 1px solid var(--line); border-radius: .55rem; color: var(--muted); background: transparent; font-size: .75rem; cursor: pointer; }

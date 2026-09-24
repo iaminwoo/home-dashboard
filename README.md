@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Home Dashboard
 
-## Getting Started
+집 안의 태블릿에 표시하고 휴대폰에서 관리하는 개인 대시보드입니다.
 
-First, run the development server:
+## 로컬 실행 및 같은 Wi-Fi 기기 접속
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+개발 서버는 모든 네트워크 인터페이스(`0.0.0.0`)에서 수신합니다. 터미널에 표시되는 `Network` 주소 또는 개발 컴퓨터의 LAN IP를 사용해 같은 Wi-Fi의 태블릿·휴대폰에서 접속하세요.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+예를 들어 개발 컴퓨터 IP가 `192.168.0.25`이면 다음 주소를 엽니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+http://192.168.0.25:3000/display
+```
 
-## Learn More
+macOS에서는 Wi-Fi IP를 다음 명령으로 확인할 수 있습니다.
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+ipconfig getifaddr en0
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+접속이 되지 않으면 두 기기가 같은 Wi-Fi에 연결되었는지, macOS 방화벽이 Node.js의 들어오는 연결을 허용하는지 확인하세요. 포트 3000을 다른 프로그램이 사용 중이면 Next.js가 다른 포트를 표시하므로, 주소의 포트 번호를 함께 바꿔야 합니다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 환경변수
 
-## Deploy on Vercel
+`.env.example`를 참고해 `.env.local`에 기존 Supabase 프로젝트 정보와 기상청 인증키를 추가합니다. 기상청 키는 **기상청 API 허브**의 초단기실황 API에서 발급한 `authKey`를 사용합니다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```text
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
+NEXT_PUBLIC_HOME_LATITUDE=
+NEXT_PUBLIC_HOME_LONGITUDE=
+KMA_API_KEY=
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 확인 명령
+
+```bash
+npm run lint
+npm run build
+```
