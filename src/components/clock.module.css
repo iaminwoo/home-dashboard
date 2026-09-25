@@ -1,1 +1,149 @@
-.clock { display: flex; min-width: 14rem; height: 100%; flex-direction: column; justify-content: flex-end; padding-bottom: clamp(.25rem, 1vw, .7rem); }.period { margin-bottom: .3rem; color: var(--accent); font-size: clamp(.95rem, 1.7vw, 1.12rem); font-weight: 800; }.time { display: block; font-size: clamp(4.35rem, 8.5vw, 7rem); font-weight: 700; letter-spacing: -.075em; line-height: .9; font-variant-numeric: tabular-nums; }.date { margin-top: 1.05rem; color: var(--muted); font-size: clamp(1.05rem, 1.9vw, 1.28rem); font-weight: 600; }.loading { width: 13rem; height: 6rem; border-radius: .75rem; background: #e8eeeb; }
+.clock {
+  display: flex;
+  min-width: 14rem;
+  height: 100%;
+  flex-direction: column;
+  padding-bottom: clamp(0.25rem, 1vw, 0.7rem);
+}
+.quickActions {
+  order: 2;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  gap: 0.45rem;
+  margin-top: calc(1rem + 6px);
+}
+.quickActions button {
+  display: inline-flex;
+  min-width: 4.7rem;
+  min-height: 2.2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 0.55rem;
+  color: #4b5a53;
+  background: #ffffffb8;
+  font-size: clamp(0.78rem, 1.05vw, 0.9rem);
+  font-weight: 700;
+}
+.quickActions svg {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.quickActions button:active {
+  color: white;
+  background: var(--accent);
+}
+.timeBlock {
+  order: 1;
+  display: grid;
+  justify-items: center;
+  margin-top: auto;
+}
+.timeDisplay {
+  display: grid;
+  justify-items: start;
+}
+.period {
+  margin-bottom: 0.38rem;
+  color: var(--accent);
+  font-size: clamp(1.08rem, 1.95vw, 1.3rem);
+  font-weight: 800;
+}
+.time {
+  display: block;
+  font-size: clamp(4.8rem, 9.3vw, 7.6rem);
+  font-weight: 700;
+  letter-spacing: -0.065em;
+  line-height: 0.9;
+  font-variant-numeric: tabular-nums;
+}
+.date {
+  margin-top: 1.15rem;
+  color: var(--muted);
+  font-size: clamp(1.16rem, 2.1vw, 1.42rem);
+  font-weight: 650;
+}
+.loading {
+  width: 13rem;
+  height: 6rem;
+  border-radius: 0.75rem;
+  background: #e8eeeb;
+}
+.modalOverlay {
+  position: fixed;
+  z-index: 2000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: clamp(1.25rem, 5vw, 4rem);
+  background: #173129e8;
+}
+.modal {
+  position: relative;
+  display: grid;
+  width: min(100%, 62rem);
+  max-height: 100%;
+  justify-items: center;
+  gap: clamp(1rem, 2vw, 1.6rem);
+  overflow: auto;
+  padding: clamp(2rem, 6vw, 5rem);
+  border-radius: 1.5rem;
+  color: var(--ink);
+  background: #fff;
+  text-align: center;
+}
+.modalLabel {
+  color: var(--accent);
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: 800;
+}
+.modal h2 {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  letter-spacing: -0.045em;
+  line-height: 1.22;
+}
+.address {
+  width: 100%;
+  max-width: none;
+  white-space: pre-line;
+  word-break: keep-all;
+}
+.modal .address {
+  font-size: clamp(1.55rem, 3.3vw, 3rem);
+}
+.modal .wifiTitle {
+  font-size: clamp(1.45rem, 2.8vw, 2.5rem);
+}
+.qrImage {
+  width: min(100%, 28rem);
+  aspect-ratio: 1;
+  object-fit: contain;
+  image-rendering: auto;
+}
+.modalHint {
+  color: #526059;
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+  line-height: 1.5;
+}
+.modalHint code {
+  padding: 0.15em 0.35em;
+  border-radius: 0.3rem;
+  background: #edf2ef;
+}
+@media (max-width: 520px) {
+  .clock {
+    gap: 0;
+  }
+  .quickActions button {
+    min-height: 2.35rem;
+  }
+  .modal {
+    padding: 4rem 1.5rem 2rem;
+  }
+  .modal h2 {
+    font-size: clamp(1.8rem, 9vw, 3rem);
+  }
+}
