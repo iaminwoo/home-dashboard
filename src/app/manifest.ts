@@ -5,9 +5,8 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Home Dashboard",
     short_name: "Dashboard",
     description: "우리 집을 위한 개인 대시보드",
-    start_url: "/display",
+    start_url: "/",
     display: "standalone",
-    orientation: "landscape",
     background_color: "#f6f7f4",
     theme_color: "#f6f7f4",
     icons: [
