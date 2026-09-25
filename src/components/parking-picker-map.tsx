@@ -19,5 +19,5 @@ function CenterTracker({ center, recenterSignal, onCenterChange }: ParkingPicker
 }
 
 export function ParkingPickerMap(props: ParkingPickerMapProps) {
-  return <div className={styles.mapShell}><MapContainer center={[props.center.latitude, props.center.longitude]} zoom={16} className={styles.map} scrollWheelZoom><TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" />{homeLocation && <Marker position={[homeLocation.latitude, homeLocation.longitude]} icon={homeIcon} interactive={false} />}<CenterTracker {...props} /></MapContainer><div className={styles.centerPin} aria-hidden="true"><span>⌖</span></div></div>;
+  return <div className={styles.mapShell}><MapContainer center={[props.center.latitude, props.center.longitude]} zoom={19} maxZoom={19} className={styles.map} scrollWheelZoom><TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" maxZoom={19} />{homeLocation && <Marker position={[homeLocation.latitude, homeLocation.longitude]} icon={homeIcon} interactive={false} />}<CenterTracker {...props} /></MapContainer><div className={styles.centerPin} aria-hidden="true"><span>⌖</span></div></div>;
 }

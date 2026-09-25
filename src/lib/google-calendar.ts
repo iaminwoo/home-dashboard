@@ -57,6 +57,5 @@ export async function getUpcomingCalendarEvents(now = new Date()) {
         end: event.end?.dateTime ?? event.end?.date ?? "",
         allDay,
       };
-    })
-    .filter((event) => event.allDay || new Date(event.start).getTime() >= now.getTime());
+    });
 }

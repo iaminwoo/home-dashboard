@@ -6,6 +6,11 @@ export type DashboardCalendarEvent = {
   allDay: boolean;
 };
 
+export type CalendarDayEvent = {
+  event: DashboardCalendarEvent;
+  dateKey: string;
+};
+
 export function koreaDateKey(value: string, allDay = false) {
   if (allDay) return value.slice(0, 10);
 
@@ -31,6 +36,32 @@ export function addDays(dateKey: string, days: number) {
   return koreaDateKey(date.toISOString());
 }
 
+export function eventOccursOnKoreaDate(
+  event: DashboardCalendarEvent,
+  targetDate: string,
+) {
+  if (event.allDay) {
+    const endDate = event.end || addDays(event.start, 1);
+    return event.start <= targetDate && targetDate < endDate;
+  }
+
+  const dayStart = new Date(`${targetDate}T00:00:00+09:00`);
+  const dayEnd = new Date(dayStart.getTime() + 24 * 60 * 60 * 1000);
+  const eventStart = new Date(event.start);
+  const eventEnd = new Date(event.end);
+
+  return eventStart < dayEnd && eventEnd > dayStart;
+}
+
+export function eventsOnKoreaDate(
+  events: DashboardCalendarEvent[],
+  dateKey: string,
+): CalendarDayEvent[] {
+  return events
+    .filter((event) => eventOccursOnKoreaDate(event, dateKey))
+    .map((event) => ({ event, dateKey }));
+}
+
 export function calendarTime(event: DashboardCalendarEvent) {
   if (event.allDay) return "종일";
 
@@ -53,7 +84,7 @@ export function calendarDayLabel(dateKey: string) {
     parts.find((item) => item.type === type)?.value ?? "";
   const weekday = new Intl.DateTimeFormat("ko-KR", {
     timeZone: "Asia/Seoul",
-    weekday: "short",
+    weekday: "long",
   }).format(date);
   return `${Number(part("month"))}/${Number(part("day"))} ${weekday}`;
 }

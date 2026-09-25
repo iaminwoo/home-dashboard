@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { addDays, calendarDayLabel, calendarTime, koreaDateKey, koreaTodayKey, type DashboardCalendarEvent } from "@/lib/calendar-events";
+import { addDays, calendarDayLabel, calendarTime, eventsOnKoreaDate, koreaTodayKey, type CalendarDayEvent, type DashboardCalendarEvent } from "@/lib/calendar-events";
 import { DashboardIcon } from "./dashboard-icon";
 import styles from "./dashboard-cards.module.css";
 
@@ -11,8 +11,8 @@ function Card({ title, icon, children, className = "" }: CardProps) { return <se
 const TODAY_LIMIT = 5;
 const FUTURE_LIMIT = 4;
 
-function EventRows({ events, compact = false }: { events: DashboardCalendarEvent[]; compact?: boolean }) {
-  return <ol className={compact ? styles.upcomingList : styles.calendarList}>{events.map((event) => <li key={event.id}>{compact && <span className={styles.day}>{calendarDayLabel(koreaDateKey(event.start, event.allDay))}</span>}<time>{calendarTime(event)}</time><strong>{event.summary}</strong></li>)}</ol>;
+function EventRows({ events, compact = false }: { events: CalendarDayEvent[]; compact?: boolean }) {
+  return <ol className={compact ? styles.upcomingList : styles.calendarList}>{events.map(({ event, dateKey }) => <li key={`${event.id}-${dateKey}`}>{compact && <span className={styles.day}>{calendarDayLabel(dateKey)}</span>}<time>{calendarTime(event)}</time><strong>{event.summary}</strong></li>)}</ol>;
 }
 
 export function CalendarCard() {
@@ -37,9 +37,10 @@ export function CalendarCard() {
     const today = koreaTodayKey();
     const tomorrow = addDays(today, 1);
     return {
-      today: (events ?? []).filter((event) => koreaDateKey(event.start, event.allDay) === today),
-      tomorrow: (events ?? []).filter((event) => koreaDateKey(event.start, event.allDay) === tomorrow),
-      upcoming: (events ?? []).filter((event) => koreaDateKey(event.start, event.allDay) > tomorrow),
+      today: eventsOnKoreaDate(events ?? [], today),
+      tomorrow: eventsOnKoreaDate(events ?? [], tomorrow),
+      upcoming: Array.from({ length: 6 }, (_, index) => addDays(today, index + 2))
+        .flatMap((dateKey) => eventsOnKoreaDate(events ?? [], dateKey)),
     };
   }, [events]);
 
