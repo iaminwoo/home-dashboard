@@ -88,3 +88,17 @@ export function calendarDayLabel(dateKey: string) {
   }).format(date);
   return `${Number(part("month"))}/${Number(part("day"))} ${weekday}`;
 }
+
+export function calendarShortDayLabel(dateKey: string) {
+  const date = new Date(`${dateKey}T12:00:00+09:00`);
+  const weekday = new Intl.DateTimeFormat("ko-KR", {
+    timeZone: "Asia/Seoul",
+    weekday: "short",
+  }).format(date);
+  const day = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Seoul",
+    day: "numeric",
+  }).format(date);
+
+  return { weekday, day };
+}

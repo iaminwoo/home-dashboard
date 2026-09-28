@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
+const lanIp = process.env.DEV_LAN_IP;
+
 const nextConfig: NextConfig = {
-  // 개발 컴퓨터의 Wi-Fi LAN 주소에서 태블릿·휴대폰이 HMR 자산을 요청할 수 있게 합니다.
-  allowedDevOrigins: ["192.168.45.214"],
+  // `scripts/dev.mjs`가 현재 LAN IP를 찾아 개발 서버에 전달합니다.
+  allowedDevOrigins: lanIp ? [lanIp] : [],
 };
 
 export default nextConfig;

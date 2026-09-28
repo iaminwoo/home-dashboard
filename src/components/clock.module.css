@@ -23,8 +23,8 @@
   padding: 0.35rem 0.6rem;
   border: 1px solid var(--line);
   border-radius: 0.55rem;
-  color: #4b5a53;
-  background: #ffffffb8;
+  color: var(--muted);
+  background: var(--card);
   font-size: clamp(0.78rem, 1.05vw, 0.9rem);
   font-weight: 700;
 }
@@ -54,6 +54,7 @@
 }
 .time {
   display: block;
+  color: var(--clock-time);
   font-size: clamp(4.8rem, 9.3vw, 7.6rem);
   font-weight: 700;
   letter-spacing: -0.065em;
@@ -62,15 +63,16 @@
 }
 .date {
   margin-top: 1.15rem;
-  color: var(--muted);
+  color: var(--text-subtle-warm);
   font-size: clamp(1.16rem, 2.1vw, 1.42rem);
   font-weight: 650;
+  text-shadow: none;
 }
 .loading {
   width: 13rem;
   height: 6rem;
   border-radius: 0.75rem;
-  background: #e8eeeb;
+  background: var(--surface-soft);
 }
 .modalOverlay {
   position: fixed;
@@ -79,7 +81,7 @@
   display: grid;
   place-items: center;
   padding: clamp(1.25rem, 5vw, 4rem);
-  background: #173129e8;
+  background: var(--overlay);
 }
 .modal {
   position: relative;
@@ -92,8 +94,18 @@
   padding: clamp(2rem, 6vw, 5rem);
   border-radius: 1.5rem;
   color: var(--ink);
-  background: #fff;
+  border: 1px solid var(--line);
+  background: var(--card);
+  box-shadow: none;
   text-align: center;
+}
+.wifiModal {
+  gap: clamp(.65rem, 1.25vw, 1rem);
+}
+.themeModal {
+  width: min(100%, 32rem);
+  justify-items: stretch;
+  text-align: left;
 }
 .modalLabel {
   color: var(--accent);
@@ -117,6 +129,101 @@
 .modal .wifiTitle {
   font-size: clamp(1.45rem, 2.8vw, 2.5rem);
 }
+.modal .themeTitle {
+  justify-self: center;
+  font-size: clamp(1.7rem, 3.2vw, 2.5rem);
+}
+.themeOptions {
+  display: grid;
+  gap: .55rem;
+}
+.autoThemeSection {
+  display: grid;
+  gap: .65rem;
+}
+.themeOption {
+  display: grid;
+  min-height: 3.35rem;
+  grid-template-columns: 3rem minmax(0, 1fr) 1.4rem;
+  align-items: center;
+  gap: .7rem;
+  padding: .55rem .7rem;
+  border: 1px solid var(--line);
+  border-radius: .75rem;
+  color: var(--ink);
+  background: var(--card);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+}
+.themeOption:active {
+  background: var(--surface-soft);
+}
+.themeOptionSelected {
+  border-color: var(--accent);
+  background: var(--surface-soft);
+}
+.themePreview {
+  display: flex;
+  gap: .2rem;
+}
+.themePreview i {
+  display: block;
+  width: .7rem;
+  height: .7rem;
+  border: 1px solid rgb(46 42 42 / 12%);
+  border-radius: 50%;
+}
+.themeRadio {
+  display: grid;
+  width: 1.35rem;
+  height: 1.35rem;
+  place-items: center;
+  border: 1.5px solid var(--line);
+  border-radius: 50%;
+  color: white;
+  font-size: .8rem;
+}
+.themeOptionSelected .themeRadio {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+.autoThemeDescription,
+.autoThemeSchedule,
+.manualThemeLabel {
+  color: var(--muted);
+}
+.autoThemeDescription {
+  font-size: .92rem;
+  line-height: 1.45;
+}
+.autoThemeSchedule {
+  display: grid;
+  gap: .3rem;
+  padding: .15rem .1rem;
+  font-size: .84rem;
+  line-height: 1.35;
+}
+.autoThemeSchedule div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+}
+.autoThemeSchedule strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+.themeDivider {
+  height: 1px;
+  margin: .45rem 0 .15rem;
+  background: var(--line);
+}
+.manualThemeLabel {
+  margin: .15rem 0 .1rem;
+  font-size: .94rem;
+  font-weight: 800;
+}
 .qrImage {
   width: min(100%, 28rem);
   aspect-ratio: 1;
@@ -124,14 +231,19 @@
   image-rendering: auto;
 }
 .modalHint {
-  color: #526059;
+  color: var(--muted);
   font-size: clamp(1rem, 1.8vw, 1.3rem);
   line-height: 1.5;
+}
+.dismissHint {
+  color: var(--muted);
+  font-size: clamp(.82rem, 1.2vw, .96rem);
+  font-weight: 600;
 }
 .modalHint code {
   padding: 0.15em 0.35em;
   border-radius: 0.3rem;
-  background: #edf2ef;
+  background: var(--accent-soft);
 }
 @media (max-width: 520px) {
   .clock {

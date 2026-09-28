@@ -1,1 +1,4 @@
 .page { width: min(100%, 38rem); min-height: 100svh; margin: auto; padding: 1.5rem 1.25rem 3rem; }.back { display: inline-block; margin-bottom: 3.5rem; color: var(--muted); font-size: .88rem; }.eyebrow { margin-bottom: .6rem; color: var(--accent); font-size: .72rem; font-weight: 800; letter-spacing: .14em; }.page h1 { font-size: clamp(2.3rem, 10vw, 3.4rem); letter-spacing: -.07em; }.intro { margin-top: .8rem; color: var(--muted); line-height: 1.55; }.notice { margin-top: 2rem; color: var(--muted); font-size: .75rem; line-height: 1.5; }.notice code { padding: .1rem .25rem; border-radius: .2rem; background: #e9eeeb; }
+
+.notice code { background: var(--accent-soft); }
+.intro { color: var(--pattern-text); text-shadow: var(--pattern-text-shadow); }

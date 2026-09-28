@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { AuthGate } from "@/components/auth-gate";
+import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import "leaflet/dist/leaflet.css";
 
@@ -8,7 +9,7 @@ export const metadata: Metadata = { title: "Home Dashboard", description: "ìš°ë¦
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="ko">
-      <body><AuthGate>{children}</AuthGate></body>
+      <body><ThemeProvider><AuthGate>{children}</AuthGate></ThemeProvider></body>
     </html>
   );
 }

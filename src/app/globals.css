@@ -1,1 +1,92 @@
-:root { --ink: #18332c; --accent: #2d6f60; --surface: #f6f7f4; --card: #fff; --muted: #58655e; --line: #d5dfd9; } * { box-sizing: border-box; padding: 0; margin: 0; } html { min-height: 100%; } body { min-height: 100%; color: var(--ink); background: var(--surface); font-family: Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; -webkit-font-smoothing: antialiased; } a { color: inherit; text-decoration: none; } button, input, textarea { font: inherit; }
+:root {
+  --background: #f8dcdd;
+  --surface: var(--background);
+  --surface-soft: #fceeee;
+  --card: #fff8f8;
+  --ink: #2e2a2a;
+  --muted: #746868;
+  --accent: #d94a57;
+  --accent-strong: #c83b49;
+  --accent-soft: #f7d8dc;
+  --line: #edd7d8;
+  --dot-color: rgb(217 74 87 / 33%);
+  --pattern-text: var(--accent);
+  --pattern-text-shadow: none;
+  --clock-time: #2b2324;
+  --text-subtle-warm: #8c6f73;
+  --surface-emphasis: #ffeff1;
+  --surface-neutral: #fff5f4;
+  --surface-future: #fff3f3;
+  --surface-active: #f9e5e7;
+  --text-muted-soft: #9b898a;
+  --checkbox-border: #af9699;
+  --overlay: rgb(46 42 42 / 88%);
+  --home-marker: #e99ba3;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+  color: var(--ink);
+  background-color: var(--background);
+  background-image:
+    radial-gradient(
+      circle at 5px 5px,
+      var(--dot-color) 4.2px,
+      transparent 4.5px
+    ),
+    radial-gradient(
+      circle at 31px 31px,
+      var(--dot-color) 4.2px,
+      transparent 4.5px
+    );
+  background-size: 52px 52px;
+  font-family: Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.parking-location-marker {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 38px;
+}
+.parking-location-marker-pin {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border: 1.5px solid var(--card);
+  border-radius: 50% 50% 50% 0;
+  color: white;
+  background: var(--accent);
+  box-shadow: 0 1px 3px rgb(46 42 42 / 30%);
+  transform: rotate(-45deg);
+}
+.parking-location-marker-pin > span {
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  transform: rotate(45deg) translate(0, -1px);
+}
+.home-location-marker { display: grid; width: 20px; height: 20px; place-items: center; border: 2px solid var(--card); border-radius: 6px; background: var(--home-marker); box-shadow: 0 1px 3px rgb(46 42 42 / 22%); }

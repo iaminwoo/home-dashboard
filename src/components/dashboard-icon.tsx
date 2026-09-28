@@ -1,4 +1,4 @@
-type DashboardIconName = "weather-clear" | "weather-cloud" | "weather-rain" | "weather-snow" | "parking" | "calendar" | "checklist" | "pin" | "wifi" | "more";
+type DashboardIconName = "weather-clear" | "weather-cloud" | "weather-rain" | "weather-snow" | "parking" | "calendar" | "checklist" | "pin" | "wifi" | "palette" | "more";
 
 export function DashboardIcon({ name }: { name: DashboardIconName }) {
   const common = { fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
@@ -10,6 +10,7 @@ export function DashboardIcon({ name }: { name: DashboardIconName }) {
   if (name === "calendar") return <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="5.5" width="15" height="14" rx="2" {...common} /><path d="M8 3.5v4M16 3.5v4M4.5 10h15M8 14h.1M12 14h.1M16 14h.1" {...common} /></svg>;
   if (name === "pin") return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.1 6-11.1a6 6 0 1 0-12 0C6 15.9 12 21 12 21Z" {...common} /><circle cx="12" cy="9.8" r="2" {...common} /></svg>;
   if (name === "wifi") return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 9.3a12.1 12.1 0 0 1 17 0M6.7 12.5a7.5 7.5 0 0 1 10.6 0M9.9 15.7a3 3 0 0 1 4.2 0" {...common} /><path d="M12 19.5h.01" {...common} /></svg>;
+  if (name === "palette") return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 1 0 0 17h1.2a1.8 1.8 0 0 0 0-3.6h-.8a1.7 1.7 0 0 1 0-3.4h1.1a4.9 4.9 0 0 0 4.9-4.9A5.2 5.2 0 0 0 12 3.5Z" {...common} /><path d="M7.8 10.2h.01M10.2 7.5h.01M14.2 7.5h.01M16.4 10.5h.01" {...common} /></svg>;
   if (name === "more") return <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1" fill="currentColor" /><circle cx="12" cy="12" r="1" fill="currentColor" /><circle cx="19" cy="12" r="1" fill="currentColor" /></svg>;
   return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.2 4.2L19 7.2" {...common} /></svg>;
 }

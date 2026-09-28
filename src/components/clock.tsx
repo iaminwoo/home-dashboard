@@ -2,16 +2,19 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { autoThemeSchedule, dashboardThemeNames, dashboardThemes, getAutoTheme, type ThemeMode } from "@/lib/dashboard-theme";
 import { DashboardIcon } from "./dashboard-icon";
+import { useDashboardTheme } from "./theme-provider";
 import styles from "./clock.module.css";
 
-type QuickInfo = "address" | "wifi" | "other" | null;
+type QuickInfo = "address" | "wifi" | "theme" | null;
 const homeAddress = process.env.NEXT_PUBLIC_HOME_ADDRESS?.replace(/\\n/g, "\n").trim();
 
 export function Clock() {
   const [now, setNow] = useState<Date | null>(null);
   const [quickInfo, setQuickInfo] = useState<QuickInfo>(null);
   const [qrAvailable, setQrAvailable] = useState(true);
+  const { themeMode, setThemeMode } = useDashboardTheme();
 
   useEffect(() => {
     const update = () => setNow(new Date());
@@ -42,6 +45,8 @@ export function Clock() {
     day: "numeric",
     weekday: "long",
   }).format(now);
+  const autoTheme = dashboardThemes[getAutoTheme()];
+  const chooseTheme = (mode: ThemeMode) => { setThemeMode(mode); setQuickInfo(null); };
 
   return (
     <div className={styles.clock}>
@@ -54,9 +59,9 @@ export function Clock() {
           <DashboardIcon name="wifi" />
           <span>Wi‑Fi</span>
         </button>
-        <button type="button" onClick={() => setQuickInfo("other")}>
-          <DashboardIcon name="more" />
-          <span>기타</span>
+        <button type="button" onClick={() => setQuickInfo("theme")}>
+          <DashboardIcon name="palette" />
+          <span>테마</span>
         </button>
       </div>
       <div className={styles.timeBlock}>
@@ -75,7 +80,7 @@ export function Clock() {
           onClick={() => setQuickInfo(null)}
         >
           <section
-            className={styles.modal}
+            className={`${styles.modal} ${quickInfo === "wifi" ? styles.wifiModal : ""} ${quickInfo === "theme" ? styles.themeModal : ""}`}
             role="dialog"
             aria-modal="true"
             aria-labelledby="quick-info-title"
@@ -111,15 +116,36 @@ export function Clock() {
                 )}
               </>
             )}
-            {quickInfo === "other" && (
+            {quickInfo === "theme" && (
               <>
-                <p className={styles.modalLabel}>기타</p>
-                <h2 id="quick-info-title">준비 중이에요</h2>
-                <p className={styles.modalHint}>
-                  이 공간에는 나중에 필요한 정보를 추가할 수 있어요.
-                </p>
+                <h2 id="quick-info-title" className={styles.themeTitle}>테마</h2>
+                <div className={styles.themeOptions} role="radiogroup" aria-label="대시보드 테마">
+                  <div className={styles.autoThemeSection}>
+                    <button type="button" className={`${styles.themeOption} ${themeMode === "auto" ? styles.themeOptionSelected : ""}`} role="radio" aria-checked={themeMode === "auto"} onClick={() => chooseTheme("auto")}>
+                      <span className={styles.themePreview} aria-hidden="true"><i style={{ background: autoTheme.preview.background }} /><i style={{ background: autoTheme.preview.dot }} /><i style={{ background: autoTheme.preview.accent }} /></span>
+                      <span>자동</span>
+                      <span className={styles.themeRadio}>{themeMode === "auto" ? "✓" : ""}</span>
+                    </button>
+                    <p className={styles.autoThemeDescription}>시간대에 따라 자동으로 변경됩니다.</p>
+                    <div className={styles.autoThemeSchedule} aria-label="자동 테마 시간표">
+                      {autoThemeSchedule.map((rule) => <div key={rule.label}><span>{rule.label}</span><strong>{dashboardThemes[rule.theme].label}</strong></div>)}
+                    </div>
+                  </div>
+                  <div className={styles.themeDivider} aria-hidden="true" />
+                  <p className={styles.manualThemeLabel}>직접 선택</p>
+                  {dashboardThemeNames.map((themeName) => {
+                    const theme = dashboardThemes[themeName];
+                    const selected = themeMode === themeName;
+                    return <button key={themeName} type="button" className={`${styles.themeOption} ${selected ? styles.themeOptionSelected : ""}`} role="radio" aria-checked={selected} onClick={() => chooseTheme(themeName)}>
+                      <span className={styles.themePreview} aria-hidden="true"><i style={{ background: theme.preview.background }} /><i style={{ background: theme.preview.dot }} /><i style={{ background: theme.preview.accent }} /></span>
+                      <span>{theme.label}</span>
+                      <span className={styles.themeRadio}>{selected ? "✓" : ""}</span>
+                    </button>;
+                  })}
+                </div>
               </>
             )}
+            <p className={styles.dismissHint}>바깥을 누르면 닫혀요</p>
           </section>
         </div>
       )}

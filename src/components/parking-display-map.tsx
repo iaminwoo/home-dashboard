@@ -2,18 +2,11 @@
 
 import type { ParkingPosition } from "@/lib/dashboard-parking";
 import { homeLocation } from "@/lib/home-location";
-import L from "leaflet";
 import { useEffect } from "react";
 import { MapContainer, Marker, Polyline, TileLayer, useMap } from "react-leaflet";
 import styles from "./parking-map.module.css";
 import { homeIcon } from "./leaflet-home-icon";
-
-const pinIcon = L.divIcon({
-  className: "",
-  html: '<span style="font-size:30px;line-height:1">📍</span>',
-  iconSize: [30, 30],
-  iconAnchor: [15, 30],
-});
+import { parkingMarkerIcon } from "./parking-marker";
 
 function KeepNearbyLocationsInView({ parking }: { parking: ParkingPosition }) {
   const map = useMap();
@@ -56,7 +49,7 @@ export function ParkingDisplayMap({ position }: { position: ParkingPosition }) {
         {homeLocation && <Polyline positions={[[position.latitude, position.longitude], [homeLocation.latitude, homeLocation.longitude]]} pathOptions={{ color: "#71817a", weight: 1.5, opacity: 0.55, dashArray: "5 7", lineCap: "round" }} interactive={false} />}
         <Marker
           position={[position.latitude, position.longitude]}
-          icon={pinIcon}
+          icon={parkingMarkerIcon}
         />
         {homeLocation && (
           <Marker
