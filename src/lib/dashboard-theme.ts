@@ -36,10 +36,10 @@ export const dashboardThemes: Record<ThemeName, ThemeDefinition> = {
 export const dashboardThemeNames = Object.keys(dashboardThemes) as ThemeName[];
 
 export const autoThemeSchedule = [
-  { startHour: 0, endHour: 12, label: "00:00–11:59", theme: "cool" },
-  { startHour: 12, endHour: 16, label: "12:00–15:59", theme: "pink" },
-  { startHour: 16, endHour: 21, label: "16:00–20:59", theme: "warm" },
-  { startHour: 21, endHour: 24, label: "21:00–23:59", theme: "cool" },
+  { startHour: 0, endHour: 6, label: "00:00–05:59", theme: "cool" },
+  { startHour: 6, endHour: 12, label: "06:00–11:59", theme: "warm" },
+  { startHour: 12, endHour: 22, label: "12:00–21:59", theme: "pink" },
+  { startHour: 22, endHour: 24, label: "22:00–23:59", theme: "cool" },
 ] as const satisfies ReadonlyArray<{
   startHour: number;
   endHour: number;
