@@ -2,13 +2,26 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { addDays, calendarDayLabel, calendarShortDayLabel, calendarTime, eventsOnKoreaDate, koreaTodayKey, type CalendarDayEvent, type DashboardCalendarEvent } from "@/lib/calendar-events";
+import { isWashTowerActiveState, useWashTowerStatus } from "@/hooks/use-wash-tower-status";
 import { DashboardIcon } from "./dashboard-icon";
+import { WashTowerPanel } from "./wash-tower-panel";
 import styles from "./dashboard-cards.module.css";
 
-type CardProps = { title: string; icon: React.ReactNode; children: React.ReactNode; className?: string };
+type CardProps = { title: React.ReactNode; icon: React.ReactNode; children: React.ReactNode; className?: string };
 function Card({ title, icon, children, className = "" }: CardProps) { return <section className={`${styles.card} ${className}`}><div className={styles.cardHeader}><span className={styles.icon}>{icon}</span><h2>{title}</h2></div>{children}</section>; }
 
 const DAY_EVENT_LIMIT = 3;
+type CalendarView = "calendar" | "washTower";
+type WashTowerPhase = "idle" | "washer" | "dryer" | "end" | "unknown";
+
+function washTowerPhase(status: ReturnType<typeof useWashTowerStatus>["status"]): WashTowerPhase {
+  if (!status) return "unknown";
+  if (isWashTowerActiveState(status.dryer.state)) return "dryer";
+  if (isWashTowerActiveState(status.washer.state)) return "washer";
+  if (status.washer.state === "END" || status.dryer.state === "END") return "end";
+  if (status.washer.state === "POWER_OFF" && status.dryer.state === "POWER_OFF") return "idle";
+  return "unknown";
+}
 
 function EventRows({ events, compact = false }: { events: CalendarDayEvent[]; compact?: boolean }) {
   return <ol className={compact ? styles.upcomingList : styles.calendarList}>{events.map(({ event, dateKey }) => <li key={`${event.id}-${dateKey}`} className={event.allDay ? styles.allDayEvent : undefined}>{compact && <span className={styles.day}>{calendarDayLabel(dateKey)}</span>}{!event.allDay && <time>{calendarTime(event)}</time>}<strong>{event.summary}</strong></li>)}</ol>;
@@ -59,6 +72,8 @@ export function CalendarCard() {
   const [events, setEvents] = useState<DashboardCalendarEvent[] | null>(null);
   const [error, setError] = useState(false);
   const [selectedDateKey, setSelectedDateKey] = useState<string | null>(null);
+  const [manualView, setManualView] = useState<{ view: CalendarView; phase: WashTowerPhase } | null>(null);
+  const washTower = useWashTowerStatus();
   useEffect(() => {
     let active = true;
     const load = async () => {
@@ -95,9 +110,24 @@ export function CalendarCard() {
   }, [events]);
 
   const selectedEvents = selectedDateKey ? eventsOnKoreaDate(events ?? [], selectedDateKey) : [];
+  const currentWashTowerPhase = washTowerPhase(washTower.status);
+  const view = manualView?.phase === currentWashTowerPhase
+    ? manualView.view
+    : currentWashTowerPhase === "washer" || currentWashTowerPhase === "dryer" || currentWashTowerPhase === "end"
+      ? "washTower"
+      : "calendar";
+  const selectView = (nextView: CalendarView) => {
+    setManualView({ view: nextView, phase: currentWashTowerPhase });
+  };
 
-  return <Card title="일정" icon={<DashboardIcon name="calendar" />} className={styles.calendarCard}>
-    {error ? <div className={styles.calendarEmpty}><strong>일정을 불러오지 못했어요</strong><span>연결 설정과 네트워크를 확인해 주세요.</span></div> : events === null ? <div className={styles.calendarEmpty}><strong>일정을 불러오는 중이에요</strong></div> : <div className={styles.calendarContent}>
+  const titleTabs = <span className={styles.calendarTitleTabs} role="tablist" aria-label="일정 또는 세탁 정보">
+    <button type="button" role="tab" aria-selected={view === "calendar"} className={view === "calendar" ? styles.calendarTitleTabSelected : ""} onClick={() => selectView("calendar")}>일정</button>
+    <span aria-hidden="true">/</span>
+    <button type="button" role="tab" aria-selected={view === "washTower"} className={view === "washTower" ? styles.calendarTitleTabSelected : ""} onClick={() => selectView("washTower")}>세탁</button>
+  </span>;
+
+  return <Card title={titleTabs} icon={<DashboardIcon name="calendar" />} className={styles.calendarCard}>
+    {view === "washTower" ? <div id="wash-tower-panel" className={styles.washTowerContent} role="tabpanel" aria-label="워시타워 상태"><WashTowerPanel status={washTower.status} loading={washTower.loading} error={washTower.error} /></div> : error ? <div id="calendar-panel" role="tabpanel" className={styles.calendarEmpty}><strong>일정을 불러오지 못했어요</strong><span>연결 설정과 네트워크를 확인해 주세요.</span></div> : events === null ? <div id="calendar-panel" role="tabpanel" className={styles.calendarEmpty}><strong>일정을 불러오는 중이에요</strong></div> : <div id="calendar-panel" role="tabpanel" className={styles.calendarContent}>
       <div className={styles.scheduleTopGrid}>
         <ScheduleDay dateKey={grouped.today} label="오늘" events={grouped.todayEvents} onOpen={setSelectedDateKey} />
         <ScheduleDay dateKey={grouped.tomorrow} label="내일" events={grouped.tomorrowEvents} onOpen={setSelectedDateKey} />

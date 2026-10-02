@@ -1,0 +1,2177 @@
+[
+  {
+    "timestamp": "2026-10-01T11:46:26.783Z",
+    "washer": {
+      "state": "INITIAL",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:47:26.745Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 60,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:48:26.788Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 59,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:49:26.809Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 58,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:50:26.783Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 57,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:51:26.812Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 52,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:52:26.860Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 51,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:53:27.133Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 50,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:54:26.987Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 49,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:55:26.814Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 48,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:56:26.843Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 47,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:57:26.864Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 46,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:58:26.787Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 45,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T11:59:26.817Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 44,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:00:26.933Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 43,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:01:26.919Z",
+    "washer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 42,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:02:27.036Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 39,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:03:27.059Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 38,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:04:27.064Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 37,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:05:26.866Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 37,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:06:27.194Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 36,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:07:26.740Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 35,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:08:27.115Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 34,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:09:27.005Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 33,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:10:27.119Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 32,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:11:27.144Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 31,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:12:26.930Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 30,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:13:26.801Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 29,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:14:26.988Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 28,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:15:26.824Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 27,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:16:26.948Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 25,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:17:26.866Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 24,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:18:27.156Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 21,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:19:27.000Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 19,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:20:26.752Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 18,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:21:27.186Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 17,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:22:26.828Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 16,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:23:27.040Z",
+    "washer": {
+      "state": "RINSING",
+      "course": null,
+      "remainingMinutes": 15,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:24:26.836Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 14,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:25:26.762Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 13,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:26:26.731Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 12,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:27:27.048Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 11,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:28:27.240Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 10,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:29:26.792Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 9,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:30:27.049Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 8,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:31:26.852Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 7,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:32:26.974Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 6,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:33:27.246Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 5,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:34:27.007Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 4,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:35:26.958Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 3,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:36:26.811Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 2,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:37:26.808Z",
+    "washer": {
+      "state": "SPINNING",
+      "course": null,
+      "remainingMinutes": 1,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:38:26.935Z",
+    "washer": {
+      "state": "END",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 60
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:40:26.837Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:42:26.813Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "DETECTING",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 100
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:43:26.879Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 65,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:44:26.767Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 64,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:45:26.802Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 63,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:46:26.862Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 62,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:47:26.860Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 61,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:48:26.893Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 60,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:49:26.998Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 59,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:50:27.307Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 58,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:51:26.713Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 57,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:52:26.824Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 56,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:53:26.935Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 55,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:54:26.824Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 54,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:55:26.887Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 53,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:56:27.269Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 52,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:57:26.790Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 51,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:58:26.795Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 50,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T12:59:26.936Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 49,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:00:26.894Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 48,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:01:27.019Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 47,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:02:26.874Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 46,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:03:27.125Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 45,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:04:26.788Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 44,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:05:26.800Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 43,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:06:26.952Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 42,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:07:26.800Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 41,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:08:26.912Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 40,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:09:26.753Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 39,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:10:26.879Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 38,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:11:26.807Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 37,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:12:26.808Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 36,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:13:34.509Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 35,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:14:26.853Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 34,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:15:26.805Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 33,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:16:26.858Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 32,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:17:26.893Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 31,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:18:26.833Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 30,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:19:26.798Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 29,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:20:26.974Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 28,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:21:26.795Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 27,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:22:26.840Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 26,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:23:26.787Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 25,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:24:26.751Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 24,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:25:26.813Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 23,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:26:26.917Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 22,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:27:26.704Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 21,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:28:27.425Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 20,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:29:26.978Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 19,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:30:27.010Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 18,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:31:26.812Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 17,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:32:26.855Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 16,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:33:26.959Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 15,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:34:26.793Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 14,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:35:26.786Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 13,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:36:26.719Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 12,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:37:26.790Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 11,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:38:26.798Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 21,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:39:26.785Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 20,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:40:26.916Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 19,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:41:26.801Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 18,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:42:26.878Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 17,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:43:26.898Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 16,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:44:26.714Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 15,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:45:27.102Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 14,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:46:26.983Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 13,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:47:26.841Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 12,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:48:26.872Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 11,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:49:26.799Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 21,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:50:26.924Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 20,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:51:26.752Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 19,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:52:26.800Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 18,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:53:26.857Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 17,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:54:26.782Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 16,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:55:26.920Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 15,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:56:26.717Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 14,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:57:26.894Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 13,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:58:26.750Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 12,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T13:59:26.740Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 11,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:00:26.904Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 21,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:01:26.807Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 10,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:02:26.896Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 9,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:03:26.956Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 8,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:04:26.879Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 7,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:05:27.096Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 6,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:06:26.986Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 5,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:07:26.781Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 4,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:08:26.750Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 3,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:09:26.945Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 2,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:10:26.750Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "RUNNING",
+      "course": null,
+      "remainingMinutes": 1,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:11:26.950Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "END",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 65
+    }
+  },
+  {
+    "timestamp": "2026-10-01T14:14:26.742Z",
+    "washer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    },
+    "dryer": {
+      "state": "POWER_OFF",
+      "course": null,
+      "remainingMinutes": 0,
+      "totalMinutes": 0
+    }
+  }
+]
