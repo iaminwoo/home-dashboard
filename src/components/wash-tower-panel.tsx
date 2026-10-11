@@ -18,6 +18,13 @@ type WashTowerPanelProps = {
   error: string | null;
 };
 
+// TEMP: 종료 예정 시각 UI 확인용입니다. 실제 기기가 동작하면 수신 상태를 우선합니다.
+const timePreviewStatus: WashTowerStatus = {
+  washer: { state: "RUNNING", remainingMinutes: 90 },
+  dryer: { state: "RUNNING", remainingMinutes: 30 },
+  fetchedAt: "",
+};
+
 function applianceDisplay(
   kind: ApplianceKind,
   appliance: WashTowerApplianceStatus,
@@ -60,10 +67,13 @@ function applianceDisplay(
 function formatRemainingMinutes(minutes: number) {
   const hours = Math.floor(minutes / 60);
   const remainder = minutes % 60;
-  if (hours === 0) return `${minutes}분 남음`;
-  return remainder === 0
-    ? `${hours}시간 남음`
-    : `${hours}시간 ${remainder}분 남음`;
+  if (hours === 0) return `${minutes}분`;
+  return remainder === 0 ? `${hours}시간` : `${hours}시간 ${remainder}분`;
+}
+
+function formatEstimatedEnd(minutes: number, now = new Date()) {
+  const end = new Date(now.getTime() + minutes * 60_000);
+  return `${String(end.getHours()).padStart(2, "0")}:${String(end.getMinutes()).padStart(2, "0")}`;
 }
 
 function ApplianceSvg({
@@ -143,7 +153,16 @@ function ApplianceCard({
           <strong>{display.label}</strong>
           {appliance.remainingMinutes !== null &&
             appliance.remainingMinutes > 0 && (
-              <span>{formatRemainingMinutes(appliance.remainingMinutes)}</span>
+              <div className={styles.applianceTime}>
+                <div>
+                  <small>남은 시간</small>
+                  <span>{formatRemainingMinutes(appliance.remainingMinutes)}</span>
+                </div>
+                <div>
+                  <small>종료 예정</small>
+                  <span>{formatEstimatedEnd(appliance.remainingMinutes)}</span>
+                </div>
+              </div>
             )}
         </div>
       </div>
@@ -161,6 +180,13 @@ export function WashTowerPanel({
     dryer: { state: null, remainingMinutes: null },
     fetchedAt: "",
   };
+  const isAllPoweredOff =
+    status?.washer.state === "POWER_OFF" &&
+    status.dryer.state === "POWER_OFF";
+  const displayedStatus =
+    process.env.NODE_ENV === "development" && isAllPoweredOff
+      ? timePreviewStatus
+      : actualStatus;
   const helperMessage = !status
     ? error
       ? "상태를 불러오지 못했습니다"
@@ -172,8 +198,8 @@ export function WashTowerPanel({
   return (
     <div className={styles.washTowerPanel}>
       <div className={styles.applianceGrid} aria-live="polite">
-        <ApplianceCard kind="washer" appliance={actualStatus.washer} />
-        <ApplianceCard kind="dryer" appliance={actualStatus.dryer} />
+        <ApplianceCard kind="washer" appliance={displayedStatus.washer} />
+        <ApplianceCard kind="dryer" appliance={displayedStatus.dryer} />
       </div>
       {helperMessage && (
         <p className={styles.washTowerHelper}>{helperMessage}</p>

@@ -130,7 +130,10 @@
 .applianceSvg[data-state="running"] .machineShake, .applianceSvg[data-state="spinning"] .machineShake { animation: washTowerMachineShake 1.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
 .applianceInfo { display: grid; min-width: 0; gap: .35rem; }
 .applianceInfo strong { color: var(--ink); font-size: clamp(1.05rem, 1.75vw, 1.35rem); line-height: 1.2; letter-spacing: -.035em; }
-.applianceInfo span { color: var(--accent); font-size: clamp(1.18rem, 2.05vw, 1.7rem); font-weight: 800; line-height: 1.12; letter-spacing: -.045em; font-variant-numeric: tabular-nums; }
+.applianceTime { display: grid; gap: .42rem; }
+.applianceTime > div { display: grid; gap: .08rem; }
+.applianceTime span { color: var(--accent); font-size: clamp(1.18rem, 2.05vw, 1.7rem); font-weight: 800; line-height: 1.12; letter-spacing: -.045em; font-variant-numeric: tabular-nums; }
+.applianceTime small { color: var(--muted); font-size: clamp(.78rem, 1.15vw, .92rem); font-weight: 700; line-height: 1.2; }
 .washTowerHelper { color: var(--muted); font-size: .85rem; font-weight: 650; text-align: center; }
 @keyframes washTowerDrumSpin { to { transform: rotate(360deg); } }
 @keyframes washTowerMachineShake { 0%, 100% { transform: translateX(0); } 35% { transform: translateX(.7px); } 70% { transform: translateX(-.7px); } }
