@@ -73,7 +73,8 @@ function formatRemainingMinutes(minutes: number) {
 
 function formatEstimatedEnd(minutes: number, now = new Date()) {
   const end = new Date(now.getTime() + minutes * 60_000);
-  return `${String(end.getHours()).padStart(2, "0")}:${String(end.getMinutes()).padStart(2, "0")}`;
+  const hour = end.getHours() % 12 || 12;
+  return `${hour}:${String(end.getMinutes()).padStart(2, "0")}`;
 }
 
 function ApplianceSvg({
